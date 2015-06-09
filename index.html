@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title> </title>
+        <link rel="stylesheet" type="text/css" href="css/style2.css"/>
+        <!-- animations.css via http://www.justinaguilar.com/animations/ -->
+        <link rel="stylesheet" type="text/css" href="css/animations.css"/> 
+        
+        <!-- vendor js -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.slotmachine.min.js"></script>
+        
+	</head>
+	<body>
+        
+        <div class="wrapper">
+
+            <div class="row">
+                <div class="plaque">
+                    <h1>Espresso Bar Slot Machine</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="machineContainer container">
+                    <div id="machine0" class="slotMachine">
+                        <div class="slot slot0-0"></div>
+                        <div class="slot slot0-1"></div>
+                        <div class="slot slot0-2"></div>
+                    </div>
+                    <div id="machine1" class="slotMachine">
+                        <div class="slot slot1-0"></div>
+                        <div class="slot slot1-1"></div>
+                        <div class="slot slot1-2"></div>
+                    </div>
+                    <div id="machine2" class="slotMachine">
+                        <div class="slot slot2-0"></div>
+                        <div class="slot slot2-1"></div>
+                        <div class="slot slot2-2"></div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="container">
+                    <button id="hold0" class="hold btn btn-toggle">HOLD</button>
+                    <button id="hold1" class="hold btn btn-toggle">HOLD</button>
+                    <button id="hold2" class="hold btn btn-toggle">HOLD</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="spin" class="btn btn-round">SPIN</button>
+                <!--<button id="cheat" class="btn btn-round">cheat</button> 
+                <button id="test" class="btn btn-round">test</button>-->
+            </div>
+
+            <div class="row">
+                <div class="screen">
+                    <span class="message winner hidden">You Win a Cup of <span id="prize"></span></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="viewport">
+                    <div id="win-image" class="winner slot hidden animated"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/app2.js"></script>
+	</body>
+</html>
