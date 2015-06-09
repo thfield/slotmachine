@@ -1,0 +1,55 @@
+h1 {
+	padding: 20px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+.wrapper {
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	background-color: #aaa;
+}
+.winner {
+	padding: 10px;
+	font-size: 2em;
+}
+.reels {
+	margin: 0 auto;
+	padding: 10px;
+}
+.reel-port {
+	margin: 5px;
+	padding: 5px;
+	width: 120px;
+	height: 120px;
+	border: 2px solid black;
+	border-radius: 15px;
+	/*box-shadow:
+    3px 2px 2px 1px #ccc,
+    0px 0px 0px 0px #000; */
+	background-color: #fff;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+.reel {
+	/* next 4 lines are to center image within reel-port  */
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reel0-0 { content: url("../images/0-coffee.jpg"); }
+.reel0-1 { content: url("../images/0-tea.jpg"); }
+.reel0-2 { content: url("../images/0-espresso.jpg"); }
+
+.reel1-0 { content: url("../images/1-coffee.jpg"); }
+.reel1-1 { content: url("../images/1-tea.jpg"); }
+.reel1-2 { content: url("../images/1-espresso.jpg"); }
+
+.reel2-0 { content: url("../images/2-coffee.jpg"); }
+.reel2-1 { content: url("../images/2-tea.jpg"); }
+.reel2-2 { content: url("../images/2-espresso.jpg"); }
