@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+body {
+font-family: sans-serif;
+}
+.wrapper {
+	margin: auto;
+	width: 500px;
+	background-color: #aaa;
+	border: 3px solid black;
+}
+.row {
+	text-align: center;
+}
+.plaque {
+	margin: 20px;
+	color: #333;
+	background-color: #ccac00;
+	padding: 10px;
+	border-radius: 5px;
+	/*box-shadow: -1px -1px 2px 1px #bbb,
+							2px 2px 0px 0px #000;*/
+}
+.hidden {
+	visibility: hidden;
+}
+.winner {
+	margin: 10px auto;
+	font-size: 2em;
+}
+.screen {
+	margin: auto;
+	width: 350px;
+	padding: 10px;
+	font-family: 'VT323',monospace ;
+	background-color: #003333;
+	color: #ccac00;
+}
+.viewport {
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin: 10px auto;
+	border: 3px solid #333;
+	background-color: white;
+}
+.container {
+	padding: 0px 10px;
+	margin: auto;
+	width: 400px;
+}
+.machineContainer{
+	background-color: #000;
+	overflow: hidden;
+	height: 120px;
+	border-radius: 15px;
+}
+.slotMachine{
+	width: 100px;
+	height: 100px;
+	padding: 0px 10px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	margin: 10px 5px;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+.slot{
+	height:100px;
+	background-position: 50%,50%;
+	background-repeat: no-repeat;
+}
+
+.slot0-0 { background-image: url("../images/0-coffee.jpg"); }
+.slot0-1 { background-image: url("../images/0-tea.jpg"); }
+.slot0-2 { background-image: url("../images/0-espresso.jpg"); }
+
+.slot1-0 { background-image: url("../images/1-coffee.jpg"); }
+.slot1-1 { background-image: url("../images/1-tea.jpg"); }
+.slot1-2 { background-image: url("../images/1-espresso.jpg"); }
+
+.slot2-0 { background-image: url("../images/2-coffee.jpg"); }
+.slot2-1 { background-image: url("../images/2-tea.jpg"); }
+.slot2-2 { background-image: url("../images/2-espresso.jpg"); }
+
+.win-0 { background-image: url("../images/win-coffee.jpg"); }
+.win-1 { background-image: url("../images/win-tea.jpg"); }
+.win-2 { background-image: url("../images/win-espresso.jpg"); }
+
+
+/* fancy button style adapted from https://github.com/codrops/CreativeButtons/ */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	background: #cb4e4e;
+	color: #000;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-round {
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	padding: 0;
+}
+.btn-round:hover {
+	box-shadow: 0 4px #ab3c3c;
+	color: #fff;
+	top: 2px;
+}
+.btn-round:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+.btn-toggle {
+	padding: 5px;
+	border-radius: 5px;
+}
+.btn-toggle:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+.toggle-active {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+	color: #fff;
+}
